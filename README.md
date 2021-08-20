@@ -6,42 +6,61 @@ This challenge allows you to practice the concepts and techniques learned over t
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-You are not allowed to collaborate during the sprint challenge. 
+You are not allowed to collaborate during the sprint challenge.
 
 ## Introduction
 
-The index.js file contains all of your challenges. Please review it in full before answering the questions. If you complete the stretch goals please leave them in your file but commented out so that they do not affect the MVP tasks 
+The index.js file contains all of your challenges. Please review it in full before answering the questions. If you complete the stretch goals please leave them in your file but commented out so that they do not affect the MVP tasks
 
-In meeting the minimum viable product (MVP) specifications listed below, you should have all tests passing. You can console.log to check your work and ensure you are submitting the correct results 
+In meeting the minimum viable product (MVP) specifications listed below, you should have all tests passing. You can console.log to check your work and ensure you are submitting the correct results
 
 ### Commits
 
-Set up codegrade early and commit your code regularly and meaningfully. 
+Set up codegrade early and commit your code regularly and meaningfully.
 
 ## Interview Questions
+
 ### (please edit this file and write your answer below each question.)
+
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
-1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each.
+
+   -.map will create a new array while not changing the original array.
+   -example: if you wanted to return the square root of all the numbers in an array.
+   -.reduce will return a signle value based off of the accumulated values from the array.
+   -example: if you wanted to return the sum of multiple values.
+   .filter will make a new array from the original array but will only pass items that pass a test which you make the specifications for.
+   -example: if you wanted to return only words that had a letter length of 3 or more.
 
 2. Explain the difference between a callback and a higher order function.
 
+   a callback is when you place a function in the argument which will then run an action. whereas higher order functions like .reduce, .map, and .filter will take another function as an argument and then return a function to its caller.
+
 3. Explain what a closure is.
+
+   a closure lets you access the outer function's scope from the inside function.
 
 4. Describe the four principles of the 'this' keyword.
 
+   Implicit binding - This is the most common rule and only applies to objects with methods. When the function is invoked look to the left of the dot thats what this refers to.
+   Explicit binding - This will pass it as an argument. You can .call which will immediately invoke the function and pass in arguements 1 by 1, .apply which will immediately invoke the function and will pass in your arguemtns as an array, .bind which will not immediately invoke the function and will instead return a brand new function that can be invoked later.
+   New binding - used when you want it returned as an object and it's useful when you want your document to look more organized. no return needed.
+   Window binding - when none of the other rules apply, this will return the window or global object in node or undefined in strict mode.
+
 5. Why do we need super() in an extended class?
 
-You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+   you need super() to access the parents properties/methods.
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
 
 ### Task 1: Set up Project
 
 Using VSCode and Command Line:
-
 
 1. Fork the repo
 2. Clone your forked version of the repo
@@ -55,7 +74,7 @@ Using VSCode and Command Line:
 Open a second terminal inside of your project by clicking on the split terminal icon
 ![alt text](assets/split_terminal.png "Split Terminal")
 
-Inside of your second terminal type `npm start` 
+Inside of your second terminal type `npm start`
 ![alt text](assets/npm_start.png "type npm start")
 
 You will be running your tests in one terminal and debugging in the other. As you work on your code you should make use of `console.log` to check your progress and debug.
@@ -68,10 +87,9 @@ You must complete all tasks inside of `index.js` and answer the questions above.
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
 ## Resources
- 
- [Sprint Challenge Study Guide](https://www.notion.so/lambdaschool/Unit-1-Sprint-3-Study-Guide-033a9a00659a4ef98c12eb97e49a6110)
+
+[Sprint Challenge Study Guide](https://www.notion.so/lambdaschool/Unit-1-Sprint-3-Study-Guide-033a9a00659a4ef98c12eb97e49a6110)
 
 ## Submission format
 
 Please submit your project via codegrade by following [these instructions](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374)
-
