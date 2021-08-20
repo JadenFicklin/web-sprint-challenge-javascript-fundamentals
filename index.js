@@ -15,7 +15,7 @@ function myFunction() {
 }
 myFunction();
 
-//🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀:
+//🚀🚀🚀 ⬇️ 📝 because variable internal is nested inside the myfunction code block's scope. ⬇️ 📝 🚀🚀🚀:
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
@@ -207,7 +207,7 @@ function CuboidMaker(dimensions) {
 CuboidMaker.prototype.volume = function () {
   return `The cuboids volumes is ${this.length * this.width * this.height}`;
 };
-/// NEEDS WORK ///
+/// NEEDS WORK TO PASS ///
 
 /* 🐴🐴🐴 Step 3: Surface Area Method 🐴🐴🐴
   Create another method called surfaceArea using CuboidMaker's prototype that returns the surface area of a given cuboid's length, width, and height. 
@@ -235,7 +235,7 @@ let cuboid = new CuboidMaker({
   height: 5,
 });
 
-/// NEEDS WORK ///
+/// NEEDS WORK TO PASS ///
 
 // 🐴🐴🐴 Test your volume and surfaceArea methods by uncommenting the logs below: 🐴🐴🐴
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
